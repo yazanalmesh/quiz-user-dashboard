@@ -1,4 +1,5 @@
 export interface UserDetails {
+  data: UserDetails;
   id: number;
   email: string;
   first_name: string;
