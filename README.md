@@ -34,8 +34,7 @@ A user management dashboard built with Angular and Angular Material. This applic
 4. Serve the application locally:
    ```bash
    ng serve
-
-
+   
 Open your browser and navigate to http://localhost:4200.
 
 
