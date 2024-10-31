@@ -34,13 +34,11 @@ export class UserListComponent {
   initializeSubscriptions() {
     this.searchService.searchTerm$.subscribe(searchTerm => {
       this.searchTheUserDetails(searchTerm);
-      console.log("insidengoint" + searchTerm);
     });
   }
   
   fetchUsersPage(pageNumber: number) {
     this.getAllUsersData(pageNumber);
-    console.log("does details exist", this.userDetails);
   }
   getAllUsersData(pageNumber: number) {
     this.userDetailsService.getUsers(pageNumber).subscribe({
@@ -49,20 +47,15 @@ export class UserListComponent {
         this.totalUsers = users.total;
         this.pageSize = users.per_page;
         this.userDetails = {} as UserDetails;
-        console.log(this.users);
       },
       error: (error) => {
         console.error('Error fetching users:', error);
-      },
-      complete: () => {
-        console.log('User data fetched successfully.');
       }
     });
   }
   
 
   searchTheUserDetails(searchTerm: string) {
-    console.log("Search term: " + searchTerm);
     if (searchTerm.trim() !== '') {
       this.userDetailsService.getUserById(searchTerm).subscribe({
         next: (response) => {
@@ -71,7 +64,7 @@ export class UserListComponent {
           if (this.snackBarRef) {
             this.snackBarRef.dismiss();  
           }
-          console.log(this.userDetails);
+          
         },
         error: () => {
           this.userDetails = {} as UserDetails;  
@@ -98,7 +91,6 @@ export class UserListComponent {
   }
 
   onPageChange(event: any) {
-    console.log(event.pageIndex + 1 + "index");
     this.getAllUsersData(event.pageIndex + 1);
   }
 
