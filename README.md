@@ -42,6 +42,5 @@ Open your browser and navigate to http://localhost:4200.
 - Special thanks to the Angular Material team for their UI components.
 
 ## Contact
-- For any questions or inquiries, please contact:
-  - Yazan Almesh - <a href="mailto:yazanalmesh@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
+- For any questions or inquiries, please contact: <a href="mailto:yazanalmesh@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
