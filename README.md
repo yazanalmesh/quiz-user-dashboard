@@ -25,7 +25,7 @@ A user management dashboard built with Angular and Angular Material. This applic
 
 2. Navigate to the project directory:
    ```bash
-  cd angular-quiz-user-dashboard
+   cd angular-quiz-user-dashboard
 
 3. Install the required dependencies:
    ```bash
