@@ -24,13 +24,16 @@ A user management dashboard built with Angular and Angular Material. This applic
    git clone https://github.com/yazanalmesh/angular-quiz-user-dashboard.git
 
 2. Navigate to the project directory:
-- cd angular-quiz-user-dashboard
+   ```bash
+  cd angular-quiz-user-dashboard
 
 3. Install the required dependencies:
-- npm install
+   ```bash
+   npm install
 
 4. Serve the application locally:
-- ng serve
+   ```bash
+   ng serve
 
 
 Open your browser and navigate to http://localhost:4200.
