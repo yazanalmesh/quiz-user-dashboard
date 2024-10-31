@@ -6,6 +6,8 @@ import { UsersRoutingModule } from './users-routing.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [UserDetailComponent, UserListComponent],
@@ -15,6 +17,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatButtonModule,
     MatCardModule,
     MatPaginatorModule,
+    MatProgressSpinnerModule,
+
   ]
 })
 export class UsersModule { }
