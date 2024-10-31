@@ -1,0 +1,15 @@
+<div class="container" *ngIf="userDetails; else loading">
+  <div class="user-details-card">
+    <div class="cover-photo"></div>
+    <div class="avatar-container">
+      <img [src]="userDetails.avatar" alt="User Image" loading="lazy" class="profile">
+    </div>
+    <h3 class="profile-name">{{ userDetails.first_name }} {{ userDetails.last_name }}</h3>
+    <p class="about">User ID: {{ userDetails.id }} <br> {{ userDetails.email }}</p>
+    <button class="btn" (click)="goBackToDashboard()">Go back to Dashboard</button>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="loading-container">Loading user details...</div>
+</ng-template>
